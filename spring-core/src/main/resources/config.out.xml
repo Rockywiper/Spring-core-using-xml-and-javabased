@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    ">
+    
+    <bean name="e1" class="com.corespring.Userdetails" autowire="byType">
+    <property name="fname" value="Prasanth"></property>
+	<property name="lname" value="Ramesh"></property>
+	<property name="mobile" value="9879067865"></property>
+    </bean>
+     
+     <bean  name="e2" class="com.corespring.Address" autowire="byType">
+     <property name="Hno" value="15"></property>
+     <property name="area" value="Tondiarpet"></property>
+     <property name="city" value="Chennai"></property>
+     <property name="state" value="Tamilnadu"></property>
+     <property name="pincode" value="081"></property>
+     </bean>
+     
+     <bean  name="e3" class="com.corespring.Productdetails" autowire="byType">
+     <property name="id" value="1"></property>
+     <property name="name" value="Formal shoe"></property>
+     <property name="price" value="3000"></property>
+     </bean>
+     
+     <bean  name="e4" class="com.corespring.Orderdetails" autowire="byType">
+     <property name="orderid" value="101"></property>
+     </bean>
+     
+    <context:annotation-config/>
+    </beans>
